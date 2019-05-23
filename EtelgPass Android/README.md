@@ -1,4 +1,4 @@
-# EtelgPass Android 
+# EtelgPass Android (1.1.1 "Babylon")
 Versão original e "atual" do EtelgPass. Funções do app:
 - Consultar notas e frequência do aluno por matéria
 - Consultar o cardápio do restaurante da escola
