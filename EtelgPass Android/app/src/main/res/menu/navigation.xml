@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_Home"
+        android:checked="true"
+        android:icon="@drawable/card_icon_24dp"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_Notas"
+        android:checked="false"
+        android:icon="@drawable/pen_icon_24dp"
+        android:title="@string/title_Notas"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_cardapio"
+        android:checked="false"
+        android:icon="@drawable/cardapio_icon_24dp"
+        android:title="@string/title_cardapio"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_secretaria"
+        android:checked="false"
+        android:icon="@drawable/star_icon_24dp"
+        android:title="@string/title_Secretaria"
+        app:showAsAction="ifRoom" />
+
+</menu>

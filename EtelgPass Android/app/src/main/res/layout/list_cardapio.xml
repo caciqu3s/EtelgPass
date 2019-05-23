@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/sampleHeader"
+                    app:expansion_headerIndicator="@id/headerIndicator"
+                    app:expansion_layout="@id/expansionLayout"
+                    app:expansion_toggleOnClick="true">
+
+                    <RelativeLayout
+                        android:background="@android:color/white"
+                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:id="@+id/text_dia_semana"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Segunda-Feira"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"/>
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:tint="@color/tab_checked"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:background="#FAFAFA"
+                        android:id="@+id/container"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_height="40dp"
+                            android:layout_width="match_parent"
+                            android:text="Restaurante(Gratuito)"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/tab_checked" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginHorizontal="@dimen/activity_vertical_margin"
+                            android:background="@color/tab_checked" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/activity_vertical_margin">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_horizontal"
+                                android:layout_marginBottom="6dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prato Básico 1"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+                                <TextView
+                                    android:id="@+id/text_arroz"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Arroz"
+                                    android:textAlignment="viewEnd"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:gravity="end" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_horizontal"
+                                android:layout_marginBottom="6dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prato Básico 2"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+                                <TextView
+                                    android:id="@+id/text_feijao"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Feijão"
+                                    android:textAlignment="viewEnd"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:gravity="end" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_horizontal"
+                                android:layout_marginBottom="6dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prato Principal"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+                                <TextView
+                                    android:id="@+id/text_principal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Carne"
+                                    android:textAlignment="viewEnd"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:gravity="end" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_horizontal"
+                                android:layout_marginBottom="6dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Guarnição"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+                                <TextView
+                                    android:id="@+id/text_guarnicao"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Purê"
+                                    android:textAlignment="viewEnd"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:gravity="end" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_horizontal"
+                                android:layout_marginBottom="6dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sobremesa/Salada"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+                                <TextView
+                                    android:id="@+id/text_saladasobrmesa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Maçã"
+                                    android:textAlignment="viewEnd"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:gravity="end" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#CCC" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_height="40dp"
+                            android:layout_width="match_parent"
+                            android:text="Restaurante(APM)"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/tab_checked" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginHorizontal="@dimen/activity_vertical_margin"
+                            android:background="@color/tab_checked" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/activity_vertical_margin">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_horizontal"
+                                android:layout_marginBottom="6dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prato Básico"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+                                <TextView
+                                    android:id="@+id/text_BasicoAPM"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Arroz/Feijão"
+                                    android:textAlignment="viewEnd"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:gravity="end" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_horizontal"
+                                android:layout_marginBottom="6dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Salada"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+                                <TextView
+                                    android:id="@+id/text_saladaAPM"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Alface"
+                                    android:textAlignment="viewEnd"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:gravity="end" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_horizontal"
+                                android:layout_marginBottom="6dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prato Principal"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+                                <TextView
+                                    android:id="@+id/text_pratoprincipalAPM"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Carne"
+                                    android:textAlignment="viewEnd"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:gravity="end" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_horizontal"
+                                android:layout_marginBottom="6dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Guarnição"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+                                <TextView
+                                    android:id="@+id/text_guarnicaoAPM"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Purê"
+                                    android:textAlignment="viewEnd"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:gravity="end" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_horizontal"
+                                android:layout_marginBottom="6dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sobremesa"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+                                <TextView
+                                    android:id="@+id/text_sobremesaAPM"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Maçã"
+                                    android:textAlignment="viewEnd"
+                                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                                    android:gravity="end" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

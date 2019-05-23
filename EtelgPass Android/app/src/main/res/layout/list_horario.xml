@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:clickable="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/retangulo"
+        android:orientation="vertical"
+        android:layout_margin="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_dia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                tools:text="Segunda" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp">
+
+                <TextView
+                    android:id="@+id/text_aula1"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="MAT1" />
+
+                <TextView
+                    android:id="@+id/text_prof1"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="PROF1" />
+
+                <TextView
+                    android:id="@+id/text_sala1"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="SALA1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp">
+
+                <TextView
+                    android:id="@+id/text_aula2"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="MAT2" />
+
+                <TextView
+                    android:id="@+id/text_prof2"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="PROF2" />
+
+                <TextView
+                    android:id="@+id/text_sala2"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="SALA2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp">
+
+                <TextView
+                    android:id="@+id/text_aula3"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="MAT3" />
+
+                <TextView
+                    android:id="@+id/text_prof3"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="PROF3" />
+
+                <TextView
+                    android:id="@+id/text_sala3"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="SALA3" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp">
+
+                <TextView
+                    android:id="@+id/text_aula4"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="MAT4" />
+
+                <TextView
+                    android:id="@+id/text_prof4"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="PROF4" />
+
+                <TextView
+                    android:id="@+id/text_sala4"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="SALA4" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp">
+
+                <TextView
+                    android:id="@+id/text_aula5"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="MAT5" />
+
+                <TextView
+                    android:id="@+id/text_prof5"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="PROF5" />
+
+                <TextView
+                    android:id="@+id/text_sala5"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="SALA5" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp">
+
+                <TextView
+                    android:id="@+id/text_aula6"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="MAT6" />
+
+                <TextView
+                    android:id="@+id/text_prof6"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="PROF6" />
+
+                <TextView
+                    android:id="@+id/text_sala6"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="SALA6" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp">
+
+                <TextView
+                    android:id="@+id/text_aula7"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="MAT7" />
+
+                <TextView
+                    android:id="@+id/text_prof7"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="PROF7" />
+
+                <TextView
+                    android:id="@+id/text_sala7"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="SALA7" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp">
+
+                <TextView
+                    android:id="@+id/text_aula8"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="MAT8" />
+
+                <TextView
+                    android:id="@+id/text_prof8"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="PROF8" />
+
+                <TextView
+                    android:id="@+id/text_sala8"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="SALA8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp">
+
+                <TextView
+                    android:id="@+id/text_aula9"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="MAT9" />
+
+                <TextView
+                    android:id="@+id/text_prof9"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="PROF9" />
+
+                <TextView
+                    android:id="@+id/text_sala9"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    tools:text="SALA9" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
