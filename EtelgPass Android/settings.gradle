@@ -1,0 +1,2 @@
+include ':app', ':expansionpane'
+project(':expansionpane').projectDir = new File('expansionpanel')
